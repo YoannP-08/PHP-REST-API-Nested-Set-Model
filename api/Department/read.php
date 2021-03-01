@@ -36,7 +36,7 @@
 
     // Checking if pagination returns data
     if ($num === 0 && 0 < $page_num) {
-        die('Result data is only 1 page, thus "page_num" param is either not required or too high.');
+        die('There are less results than the page number requested. Limit of 5 results per page.');
     }
 
     // Checking if search returns data
